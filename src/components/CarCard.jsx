@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.scss'
 
-function CarCard({ name, img }) {
-    const [check, setCheck] = useState(false);
+function CarCard({ name, img, check, index, changeState }) {
+    
+
+   
 
   return (
     <div className='card'>
         <div className='name'>{name}</div>
         <img src={img} alt=''></img>
-        <div onClick={() => setCheck(!check)} className='checkBox'>
+        <div className='checkBox' onClick={() => changeState(index)}>
             {check 
                 ? 
                 <svg width="133" height="97" viewBox="0 0 133 97" fill="none" xmlns="http://www.w3.org/2000/svg">

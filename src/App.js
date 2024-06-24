@@ -6,15 +6,30 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
-import html2canvas from 'html2canvas';
 
 function App() {
   const [pick, setPick] = useState(true);
   const [date, setDate] = useState(dayjs().format('DD.MM.YYYY'));
+  const [check, setCheck] = useState([false, false, false, false, false, false, false, false, false, false]);
   
-  const showCars = cars.map(car => {
-    return <CarCard name={car.name} img={car.img}/>
+  function arrCheck(index){
+    let copy = Object.assign([], check);
+    copy[index] = !check[index];
+    setCheck(copy);
+  }
+
+  const showCars = cars.map((car, index) => {
+    return <CarCard name={car.name} img={car.img} check={check[index]} index={index} changeState={arrCheck}/>
   });
+
+  useEffect(() => {
+    window.localStorage.setItem('MY_APP_STATE', JSON.stringify(check));
+  }, [check]);
+
+  useEffect(() => {
+    const data = window.localStorage.getItem('MY_APP_STATE');
+    if ( data !== null ) setCheck(JSON.parse(data));
+  }, []);
 
   return (
     <>
