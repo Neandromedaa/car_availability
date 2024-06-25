@@ -4,6 +4,7 @@
 }
 
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,5 +13,7 @@ body {
   /* align-items: center; */
   justify-content: center;
   background: linear-gradient(0deg, #000000 91.92%, #F6A119 128.31%);
+  padding-top: 50px;
+  overflow: hidden;
 }
 

@@ -1,32 +1,50 @@
 .card {
-    width: 480px;
-    height: 330px;
-    border: 5px solid black;
+    box-sizing: border-box;
+    width: 320px;
+    height: 218px;
+    box-shadow: 0 0 10px 5px rgba($color: #FF9900, $alpha: .15);
     position: relative;
     border-radius: 10px;
-    box-shadow: 0 0 10px 5px rgba($color: #FF9900, $alpha: .25);
+    overflow: hidden;
+    border: 5px solid black;
+    
+    @media screen and (max-width: 430px){
+        width: 202px;
+        height: 138px;
+    }    
 
     .name {
-        width: 289px;
-        height: 140px;
+        width: 192.67px;
+        height: 92.48px;
         position: absolute;
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 400;
-        line-height: 40.39px;
+        line-height: 28.85px;
         align-content: center;
-        top: 10px;
+        top: 6.61px;
         color: #FFFFFF;
-        left: 20px;
-        
+        left: 13.33px;
+        // -webkit-text-stroke: 1.3px black;
+        text-shadow: -2px -2px 0 black;
+
+        @media screen and (max-width: 430px){
+            width: 121.62px;
+            height: 58.55px;
+            top: 4.18px;
+            left: 8.42px;
+            gap: 0px;
+            border: 1px 0px 0px 0px;
+        }  
     }
 
     .checkBox {
+        box-sizing: border-box;
         position: absolute;
-        width: 150px;
-        height: 129px;
-        top: 16px;
-        left: 309px;
-        border-radius: 20px;
+        width: 100px;
+        height: 85.22px;
+        top: 10.57px;
+        left: 206px;
+        border-radius: 10px;
         border: 5px;
         border: 5px solid black;
         box-shadow: 0 0 10px 5px #FF990040;
@@ -37,9 +55,15 @@
     }
 }
 
-img {
-    background-size: cover;
-    width: 480px;
-    height: 330px;
-    border-radius: 10px;
+.imgContainer{
+    width: 320px;
+    height: 218px;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    
+}
+
+@media screen and (max-width: 430px){
+
 }
