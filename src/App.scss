@@ -6,7 +6,7 @@
   align-items: center;
   
     
-  @media screen and (max-width: 1290px){
+  @media screen and (max-device-width: 1290px){
     width: 100vw;
   }
 
@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     gap: 10px;
 
-    @media screen and (max-width: 1290px){
+    @media screen and (max-device-width: 1290px){
       width: 430px;
       justify-content: center;
     }  
@@ -40,7 +40,7 @@
     color: white;
     align-content: center;
 
-    @media screen and (max-width: 1290px){
+    @media screen and (max-device-width: 1290px){
       width: 185px;
       height: 70px;
       width: 185px;
@@ -49,7 +49,7 @@
       text-align: center;
     }  
 
-    @media screen and (max-width: 1290px){
+    @media screen and (max-device-width: 1290px){
       width: 430px;
       justify-content: center;
     }  
@@ -63,7 +63,7 @@
     background-position: center;
     background-size: cover; 
 
-    @media screen and (max-width: 1290px){
+    @media screen and (max-device-width: 1290px){
       display: none;
     }  
   }
@@ -77,7 +77,7 @@
     top: 0px
   }
 
-  @media screen and (max-width: 1290px){
+  @media screen and (max-device-width: 1290px){
     width: 430px;
     height: 70px;
     flex-flow: row;
@@ -97,7 +97,7 @@
   box-shadow: 0px 4px 4px 0px #00000040;
   color: #FFFFFF;
   
-  @media screen and (max-width: 1290px){
+  @media screen and (max-device-width: 1290px){
     width: 185px;
     height: 70px;
     line-height: 34.65px;
@@ -108,7 +108,7 @@
 .logoMobile {
   display: none;
 
-  @media screen and (max-width: 1290px){
+  @media screen and (max-device-width: 1290px){
     background-position: center;
     background-size: cover; 
     display: block;
