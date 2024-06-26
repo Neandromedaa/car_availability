@@ -63,6 +63,7 @@ function App() {
         </div>     
         <div className='cardContainer'>
           {showCars}
+          <div className='logoMobile'/>
         </div>
         
       </div>

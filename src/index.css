@@ -15,5 +15,9 @@ body {
   background: linear-gradient(0deg, #000000 91.92%, #F6A119 128.31%);
   padding-top: 50px;
   overflow: hidden;
+  
+  @media screen and (max-width: 430px){
+    padding-top: 9px;
+  }  
+   
 }
-

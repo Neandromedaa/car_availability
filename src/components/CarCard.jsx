@@ -11,7 +11,7 @@ function CarCard({ name, img, check, index, changeState }) {
         <div className='checkBox' onClick={() => changeState(index)}>
             {check 
                 ? 
-                <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='cross' width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 7L64 64M64 7L7 64" stroke="#FF0000" stroke-width="13" stroke-linecap="round"/>
                 </svg>
 
