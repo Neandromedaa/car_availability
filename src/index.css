@@ -16,7 +16,7 @@ body {
   padding-top: 50px;
   overflow: hidden;
   
-  @media screen and (max-device-width: 1290px){
+  @media (max-device-width: 1290px){
     padding-top: 9px;
   }  
    
