@@ -51,7 +51,7 @@
     }  
 
     @media (max-device-width: 1290px){
-      width: 430px;
+      width: 50vw;
       justify-content: center;
     }  
   }
@@ -75,11 +75,17 @@
     width: 365.36px;
     height: 95px;
     left: 745px;
-    top: 0px
+    top: 0px;
+
+    @media (max-device-width: 1290px){
+      width: 50vw;
+      justify-content: center;
+    }  
+
   }
 
   @media (max-device-width: 1290px){
-    width: 430px;
+    width: 100vw;
     height: 70px;
     flex-flow: row;
     justify-content: center;
@@ -99,7 +105,7 @@
   color: #FFFFFF;
   
   @media (max-device-width: 1290px){
-    width: 185px;
+    width: 50vw;
     height: 70px;
     line-height: 34.65px;
     font-size: 30px;
