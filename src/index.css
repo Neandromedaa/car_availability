@@ -3,6 +3,10 @@
   src: url(../public/YesevaOne-Regular.ttf);
 }
 
+html {
+  background-color: #000000;
+}
+
 body {
   height: 100vh;
   margin: 0;
