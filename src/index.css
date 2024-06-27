@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  height: 120vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,7 +19,7 @@ body {
   background: linear-gradient(0deg, #000000 91.92%, #F6A119 128.31%);
   background-repeat: no-repeat;
   /* padding-top: 50px; */
-  overflow: hidden;
+  /* overflow: hidden; */
   
   @media (max-device-width: 1290px) and (orientation: portrait){
     padding-top: 9px;
