@@ -32,7 +32,7 @@ function App() {
     <>
       <div className='app' id='capture'>
         <div className='headWrap'>
-          <div className='header'>Свободные автомобили</div>
+          <div className='header'>Свободные кабриолеты</div>
           <div className='logo'/>
           <div className='datePicker'>
             {pick

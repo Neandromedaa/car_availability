@@ -1,50 +1,50 @@
 .card {
     box-sizing: border-box;
-    width: 320px;
-    height: 218px;
+    width: 16.66vw;
+    height: 11.4vw;
     box-shadow: 0 0 10px 5px rgba($color: #FF9900, $alpha: .15);
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     border: 5px solid black;
     
-    @media (max-device-width: 1290px){
-        width: 47vw;
-        height: 14.8vh;
+    @media (max-device-width: 1290px) and (orientation: portrait){
+        width: 45vw;
+        height: 32vw;
     }    
 
     .name {
-        width: 192.67px;
-        height: 92.48px;
+        width: 10vw;
+        height: 5vw;
         position: absolute;
-        font-size: 25px;
+        font-size: 1.3vw;
+        // font-size: 25px;
         font-weight: 400;
-        line-height: 28.85px;
+        line-height: 1.5vw;
         align-content: center;
-        top: 6.61px;
+        top: .3vw;
         color: #FFFFFF;
-        left: 13.33px;
+        left: .7vw;
         // text-shadow: -1px -1px 0 black;
 
-        @media (max-device-width: 1290px){
-            width: 121.62px;
-            height: 58.55px;
-            top: 4.18px;
-            left: 8.42px;
-            font-size: 15px;
-            line-height: 17.31px;
+        @media (max-device-width: 1290px) and (orientation: portrait){
+            width: 30vw;
+            height: 13vw;
+            top: 1vw;
+            left: 2vw;
+            font-size: 3.4vw;
+            line-height: 4vw;
         }  
     }
 
     .checkBox {
         box-sizing: border-box;
-        position: relative;
-        width: 100px;
-        height: 85.22px;
-        top: -210px;
-        left: 204px;
+        position: absolute;
+        width: 5.21vw;
+        height: 4.43vw;
+        top: .3vw;
+        right: .3vw;
         border-radius: 10px;
-        border: 5px;
         border: 5px solid black;
         box-shadow: 0 0 10px 5px #FF990040;
         display: flex;
@@ -52,11 +52,11 @@
         align-items: center;
         background-color: rgba($color: #000000, $alpha: .3);
 
-        @media (max-device-width: 1290px){
-            width: 63.13px;
-            height: 53.95px;
-            top: -13.6vh;
-            left: 29vw;
+        @media (max-device-width: 1290px) and (orientation: portrait){
+            width: 14.6vw;
+            height: 12.6vw;
+            top: 1vw;
+            right: 1vw;
             border-radius: 10px;
             border: 3px solid black;
 
@@ -68,14 +68,15 @@
 }
 
 .imgContainer{
-    width: 320px;
-    height: 218px;
+    width: 16.66vw;
+    height: 11.4vw;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     background-size: contain;
+    // align-items: flex-start;
     
-    @media (max-device-width: 1290px){
-        width: 47vw;
-        height: 14vh;
+    @media (max-device-width: 1290px) and (orientation: portrait){
+        width: 45vw;
+        height: 32vw;
     }  
 }
