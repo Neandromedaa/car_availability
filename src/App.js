@@ -34,7 +34,7 @@ function App() {
         <div className='headWrap'>
           <div className='header'>Свободные кабриолеты</div>
           <div className='logo'/>
-          <div className='datePicker'>
+          {/* <div className='datePicker'>
             {pick
                 ?
                 <div className='currDay' onClick={() => setPick(!pick)}>{date}</div>
@@ -59,7 +59,7 @@ function App() {
                   />
                 </LocalizationProvider>
             }
-          </div>
+          </div> */}
         </div>     
         <div className='cardContainer'>
           {showCars}
